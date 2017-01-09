@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webサービス on Harvest</title>
+    <link>https://tofu2323.github.io/tofu/categories/web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/index.xml</link>
+    <description>Recent content in Webサービス on Harvest</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <atom:link href="https://tofu2323.github.io/tofu/categories/web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>スタートメモ</title>
+      <link>https://tofu2323.github.io/tofu/2017/01/start/</link>
+      <pubDate>Mon, 09 Jan 2017 12:22:58 +0900</pubDate>
+      
+      <guid>https://tofu2323.github.io/tofu/2017/01/start/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo-http-themes-gohugo-io&#34;&gt;&lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://staticsitegenerators.net/&#34;&gt;https://staticsitegenerators.net/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ brew install hugo&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;==&amp;gt; Downloading https://homebrew.bintray.com/bottles/hugo-0.18.1.sierra.bottle.t
+######################################################################## 100.0%
+==&amp;gt; Pouring hugo-0.18.1.sierra.bottle.tar.gz
+==&amp;gt; Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==&amp;gt; Summary
+🍺  /usr/local/Cellar/hugo/0.18.1: 32 files, 16.3M
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;$ hugo version&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;Hugo Static Site Generator v0.18.1 BuildDate: 2016-12-30T02:12:41+09:00
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;$ hugo new site blig&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;Congratulations! Your new Hugo site is created in /Users/fumiya/Dev/hugo/blog.
+
+Just a few more steps and you&#39;re ready to go:
+
+1. Download a theme into the same-named folder.
+   Choose a theme from https://themes.gohugo.io/, or
+   create your own with the &amp;quot;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;quot; command.
+2. Perhaps you want to add some content. You can add single files
+   with &amp;quot;hugo new &amp;lt;SECTIONNAME&amp;gt;/&amp;lt;FILENAME&amp;gt;.&amp;lt;FORMAT&amp;gt;&amp;quot;.
+3. Start the built-in live server via &amp;quot;hugo server&amp;quot;.
+
+Visit https://gohugo.io/ for quickstart guide and full documentation.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;cd themes
+git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ hugo new post/start.md --editor=&amp;quot;atom&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-default.md&#34;&gt;---
+title: &amp;quot;&amp;quot;
+slug: &amp;quot;&amp;quot;
+categories:
+  - &amp;quot;&amp;quot;
+tags:
+  - &amp;quot;&amp;quot;
+---
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;$ hugo server -v&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

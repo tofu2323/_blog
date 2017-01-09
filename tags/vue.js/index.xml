@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue.Js on Harvest</title>
+    <link>https://tofu2323.github.io/tofu/tags/vue.js/index.xml</link>
+    <description>Recent content in Vue.Js on Harvest</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <atom:link href="https://tofu2323.github.io/tofu/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>フロントエンド検討メモ</title>
+      <link>https://tofu2323.github.io/tofu/2017/01/start-frontend/</link>
+      <pubDate>Mon, 09 Jan 2017 13:45:38 +0900</pubDate>
+      
+      <guid>https://tofu2323.github.io/tofu/2017/01/start-frontend/</guid>
+      <description>&lt;h2 id=&#34;vue-js&#34;&gt;vue.js&lt;/h2&gt;
+
+&lt;h3 id=&#34;検討事項&#34;&gt;検討事項&lt;/h3&gt;
+
+&lt;h4 id=&#34;vue-cli&#34;&gt;vue-cli&lt;/h4&gt;
+
+&lt;p&gt;これを使えばwebpackやgruntがいらない？？&lt;/p&gt;
+
+&lt;h3 id=&#34;vuex&#34;&gt;vuex&lt;/h3&gt;
+
+&lt;p&gt;使うのが普通？&lt;br /&gt;
+Fluxというもの&lt;br /&gt;
+&lt;a href=&#34;https://medium.com/@sotayamashita/%E6%BC%AB%E7%94%BB%E3%81%A7%E8%AA%AC%E6%98%8E%E3%81%99%E3%82%8B-flux-1a219e50232b#.7ofaks2rk&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;データフローが一方向なのがすごいらしい&lt;br /&gt;
+ACTION -&amp;gt; DISPATHCER -&amp;gt; STORE -&amp;gt; VIEW -&amp;gt; ACTION&lt;br /&gt;
+Vuexは以下？&lt;br /&gt;
+Action -&amp;gt; Mutations -&amp;gt; State -&amp;gt; Vue Component -&amp;gt; Action&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;よく見かけるもの&#34;&gt;よく見かけるもの&lt;/h2&gt;
+
+&lt;h3 id=&#34;nginx&#34;&gt;Nginx&lt;/h3&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

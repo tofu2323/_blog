@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://tofu2323.github.io/tofu/2017/01/start-frontend/</loc>
+    <lastmod>2017-01-09T13:45:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tofu2323.github.io/tofu/2017/01/start/</loc>
+    <lastmod>2017-01-09T12:22:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tofu2323.github.io/tofu/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tofu2323.github.io/tofu/</loc>
+    <lastmod>2017-01-09T13:45:38+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tofu2323.github.io/tofu/tags/hugo/</loc>
+    <lastmod>2017-01-09T12:22:58+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tofu2323.github.io/tofu/post/</loc>
+    <lastmod>2017-01-09T13:45:38+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tofu2323.github.io/tofu/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tofu2323.github.io/tofu/tags/vue/index.js/</loc>
+    <lastmod>2017-01-09T13:45:38+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tofu2323.github.io/tofu/categories/web/</loc>
+    <lastmod>2017-01-09T13:45:38+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tofu2323.github.io/tofu/categories/web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/</loc>
+    <lastmod>2017-01-09T12:22:58+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
