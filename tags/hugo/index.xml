@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Harvest</title>
-    <link>https://tofu2323.github.io/tofu/tags/hugo/index.xml</link>
+    <link>https://tofu2323.github.io/blog/tags/hugo/index.xml</link>
     <description>Recent content in Hugo on Harvest</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <atom:link href="https://tofu2323.github.io/tofu/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tofu2323.github.io/blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>スタートメモ</title>
-      <link>https://tofu2323.github.io/tofu/2017/01/start/</link>
+      <link>https://tofu2323.github.io/blog/2017/01/start/</link>
       <pubDate>Mon, 09 Jan 2017 12:22:58 +0900</pubDate>
       
-      <guid>https://tofu2323.github.io/tofu/2017/01/start/</guid>
+      <guid>https://tofu2323.github.io/blog/2017/01/start/</guid>
       <description>
 
 &lt;h2 id=&#34;hugo-http-themes-gohugo-io&#34;&gt;&lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;&lt;/h2&gt;

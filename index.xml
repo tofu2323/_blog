@@ -2,20 +2,176 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Harvest</title>
-    <link>https://tofu2323.github.io/tofu/index.xml</link>
+    <link>https://tofu2323.github.io/blog/index.xml</link>
     <description>Recent content on Harvest</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Mon, 09 Jan 2017 13:45:38 +0900</lastBuildDate>
-    <atom:link href="https://tofu2323.github.io/tofu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Jan 2017 23:24:22 +0900</lastBuildDate>
+    <atom:link href="https://tofu2323.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ruby on Rails チュートリアルをやってみている2</title>
+      <link>https://tofu2323.github.io/blog/2017/01/rails-trial2/</link>
+      <pubDate>Wed, 11 Jan 2017 23:24:22 +0900</pubDate>
+      
+      <guid>https://tofu2323.github.io/blog/2017/01/rails-trial2/</guid>
+      <description>
+
+&lt;h3 id=&#34;第2章-toyアプリケーション&#34;&gt;第2章 Toyアプリケーション&lt;/h3&gt;
+
+&lt;h4 id=&#34;2-1-アプリケーションの計画&#34;&gt;2.1 アプリケーションの計画&lt;/h4&gt;
+
+&lt;p&gt;どうせなので、Herokuデプロイ前に&lt;code&gt;rails server&lt;/code&gt;してみようと思ったが、
+&lt;a href=&#34;http://localhost:3000&#34;&gt;http://localhost:3000&lt;/a&gt; につながらない。&lt;br /&gt;
+&lt;a href=&#34;http://0.0.0.0:3000/&#34;&gt;http://0.0.0.0:3000/&lt;/a&gt; だと繋がった。。。&lt;br /&gt;
+Macでlocalhostが何か違う？？　　&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git commit -am &amp;quot;Add hello&amp;quot;
+$ heroku create
+$ git push heroku master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これ、今回はサクッといった。&lt;br /&gt;
+herokuすごい！&lt;/p&gt;
+
+&lt;p&gt;からの&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ heroku open
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;$ rails generate scaffold User name:string email:string&lt;/code&gt;&lt;br /&gt;
+すごい！けど、謎が深まるばかり。。&lt;/p&gt;
+
+&lt;h5 id=&#34;2-2-1-ユーザーページを探検する&#34;&gt;2.2.1 ユーザーページを探検する&lt;/h5&gt;
+
+&lt;p&gt;探検できなかった。&lt;br /&gt;
+&lt;a href=&#34;http://0.0.0.0:3000/users&#34;&gt;http://0.0.0.0:3000/users&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ArgumentError in UsersController#index
+key must be 32 bytes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/rails/rails/issues/26694&#34;&gt;ここ&lt;/a&gt;によると&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;It has been fixed by #25758 and will be available to use when Rails 5.0.1 is released, thanks for the report!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;とのこと。。&lt;/p&gt;
+
+&lt;p&gt;ということで、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-rb&#34;&gt;gem &#39;rails&#39;,        &#39;5.0.1&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;にして、&lt;code&gt;$ bundle update&lt;/code&gt;したらいけた。
+けど、チュートリアルどうなのこれ？&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;heroku logs --tail&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ruby on Rails チュートリアルをやってみている</title>
+      <link>https://tofu2323.github.io/blog/2017/01/rails-trial1/</link>
+      <pubDate>Wed, 11 Jan 2017 22:40:04 +0900</pubDate>
+      
+      <guid>https://tofu2323.github.io/blog/2017/01/rails-trial1/</guid>
+      <description>
+
+&lt;h2 id=&#34;ruby-on-rails-チュートリアル&#34;&gt;Ruby on Rails チュートリアル&lt;/h2&gt;
+
+&lt;p&gt;アプリ開発にRailsを使ってみようということで&lt;a href=&#34;https://railstutorial.jp/&#34;&gt;Ruby on Rails チュートリアル&lt;/a&gt;を一通りやってみる。&lt;/p&gt;
+
+&lt;p&gt;Rubyに触ったことはない。&lt;br /&gt;
+RailsがなんかWebアプリ開発によく使われているという程度の知識。&lt;/p&gt;
+
+&lt;p&gt;プログラミング歴2年。Javaから入って今一番触っている言語はTypeScriptという私です。&lt;br /&gt;
+Macを使っている。&lt;/p&gt;
+
+&lt;p&gt;感想・ハマったことなどメモ。&lt;/p&gt;
+
+&lt;h3 id=&#34;第1章&#34;&gt;第1章&lt;/h3&gt;
+
+&lt;h4 id=&#34;1-2-1-開発環境&#34;&gt;1.2.1 開発環境&lt;/h4&gt;
+
+&lt;p&gt;Cloud9 を推奨されているけどMacにすでに入っているIntelliJ IDEAを使用。。。&lt;br /&gt;
+あとでherokuにpushするときに若干ハマる。&lt;br /&gt;
+IDEAのプロジェクトのファイル構成がよくわかっていない。&lt;/p&gt;
+
+&lt;h4 id=&#34;1-3-最初のアプリケーション&#34;&gt;1.3 最初のアプリケーション&lt;/h4&gt;
+
+&lt;p&gt;構成とかアーキはRailsで標準的なものがある感じ？？&lt;br /&gt;
+どういう風にrailsに乗って行くべきか。。&lt;/p&gt;
+
+&lt;p&gt;会社の開発（Spring Boot + Vue.js)ではroutingもクライアントでやっていてそれが普通だと思っていたけど
+そもそもサーバーでやるのが一般的なの？？&lt;/p&gt;
+
+&lt;p&gt;.GemFileというもの&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;source &#39;https://rubygems.org&#39;
+
+gem &#39;rails&#39;,        &#39;5.0.0.1&#39;
+gem &#39;puma&#39;,         &#39;3.4.0&#39;
+gem &#39;sass-rails&#39;,   &#39;5.0.6&#39;
+gem &#39;uglifier&#39;,     &#39;3.0.0&#39;
+gem &#39;coffee-rails&#39;, &#39;4.2.1&#39;
+gem &#39;jquery-rails&#39;, &#39;4.1.1&#39;
+gem &#39;turbolinks&#39;,   &#39;5.0.1&#39;
+gem &#39;jbuilder&#39;,     &#39;2.4.1&#39;
+
+group :development, :test do
+  gem &#39;sqlite3&#39;, &#39;1.3.11&#39;
+  gem &#39;byebug&#39;,  &#39;9.0.0&#39;, platform: :mri
+end
+
+group :development do
+  gem &#39;web-console&#39;,           &#39;3.1.1&#39;
+  gem &#39;listen&#39;,                &#39;3.0.8&#39;
+  gem &#39;spring&#39;,                &#39;1.7.2&#39;
+  gem &#39;spring-watcher-listen&#39;, &#39;2.0.0&#39;
+end
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem &#39;tzinfo-data&#39;, platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;package.json的なもの。。。&lt;br /&gt;
+coffee-railsとか、sass-railsとか、、クライアントサイドもrailsでかけるのね。。&lt;br /&gt;
+なんかそもそもrailsとかWebアプリについて勘違いしていた気がする。&lt;/p&gt;
+
+&lt;p&gt;開発するWebアプリでは、いつも通りクライアントとサーバは疎な感じにして
+RailsはAPIを提供するのみにする？？&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;そうした場合とそうでない場合のメリット・デメリットを知る必要がある&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;1-5-デプロイする&#34;&gt;1.5 デプロイする&lt;/h4&gt;
+
+&lt;p&gt;また、Herokuでハマった。&lt;br /&gt;
+とりあえずは、pushする時のルートが違っていたからだけどいまいちheokuを理解しきれていない。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd ~/workspace
+$ rails _5.0.0.1_ new hello_app
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;とした時、pushするのは
+&lt;code&gt;~/workspace&lt;/code&gt;ではなく&lt;code&gt;~/workspace/hello_app&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>フロントエンド検討メモ</title>
-      <link>https://tofu2323.github.io/tofu/2017/01/start-frontend/</link>
+      <link>https://tofu2323.github.io/blog/2017/01/start-frontend/</link>
       <pubDate>Mon, 09 Jan 2017 13:45:38 +0900</pubDate>
       
-      <guid>https://tofu2323.github.io/tofu/2017/01/start-frontend/</guid>
+      <guid>https://tofu2323.github.io/blog/2017/01/start-frontend/</guid>
       <description>&lt;h2 id=&#34;vue-js&#34;&gt;vue.js&lt;/h2&gt;
+
+&lt;p&gt;使い慣れているのは1.x系だけど確実に2.x系を使うべき。&lt;br /&gt;
+1.x系はなかったことにされている雰囲気。&lt;/p&gt;
+
+&lt;p&gt;2.x系少しキャッチアップにコストがかかる。&lt;br /&gt;
+どうせなら合わせて色々使ってみる？&lt;/p&gt;
 
 &lt;h3 id=&#34;検討事項&#34;&gt;検討事項&lt;/h3&gt;
 
@@ -45,10 +201,10 @@ Action -&amp;gt; Mutations -&amp;gt; State -&amp;gt; Vue Component -&amp;gt; Act
     
     <item>
       <title>スタートメモ</title>
-      <link>https://tofu2323.github.io/tofu/2017/01/start/</link>
+      <link>https://tofu2323.github.io/blog/2017/01/start/</link>
       <pubDate>Mon, 09 Jan 2017 12:22:58 +0900</pubDate>
       
-      <guid>https://tofu2323.github.io/tofu/2017/01/start/</guid>
+      <guid>https://tofu2323.github.io/blog/2017/01/start/</guid>
       <description>
 
 &lt;h2 id=&#34;hugo-http-themes-gohugo-io&#34;&gt;&lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt;&lt;/h2&gt;

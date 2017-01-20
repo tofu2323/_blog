@@ -1,5 +1,9 @@
 
 
+  
+    
+  
+
 
   
 
@@ -13,25 +17,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.18.1">
-    <title>Harvest</title>
+    <title>Ruby on Rails チュートリアルをやってみている2</title>
     <meta name="author" content="Fumiya Goto">
     <meta name="keywords" content="">
 
     <link rel="icon" href="https://tofu2323.github.io/blog/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://tofu2323.github.io/blog/index.xml">
-    
 
     
-    <meta name="description" content="Hugo tranquilpeak theme demo">
-    <meta property="og:description" content="Hugo tranquilpeak theme demo">
+    <meta name="description" content="第2章 Toyアプリケーション 2.1 アプリケーションの計画 どうせなので、Herokuデプロイ前にrails serverしてみようと思ったが、 http://localhost:3000 につながらない。
+http://0.0.0.0:3000/ だと繋がった。。。
+Macでlocalhostが何か違う？？　$ git commit -am &quot;Add hello&quot; $ heroku create $ git push heroku master  これ、今回はサクッといった。
+herokuすごい！
+からの
+$ heroku open  $ rails generate scaffold User name:string email:string
+すごい！けど、謎が深まるばかり。。
+2.2.1 ユーザーページを探検する 探検できなかった。
+http://0.0.0.0:3000/users
+ArgumentError in UsersController#index key must be 32 bytes  ここによると
+ It has been fixed by #25758 and will be available to use when Rails 5.">
+    <meta property="og:description" content="第2章 Toyアプリケーション 2.1 アプリケーションの計画 どうせなので、Herokuデプロイ前にrails serverしてみようと思ったが、 http://localhost:3000 につながらない。
+http://0.0.0.0:3000/ だと繋がった。。。
+Macでlocalhostが何か違う？？　$ git commit -am &quot;Add hello&quot; $ heroku create $ git push heroku master  これ、今回はサクッといった。
+herokuすごい！
+からの
+$ heroku open  $ rails generate scaffold User name:string email:string
+すごい！けど、謎が深まるばかり。。
+2.2.1 ユーザーページを探検する 探検できなかった。
+http://0.0.0.0:3000/users
+ArgumentError in UsersController#index key must be 32 bytes  ここによると
+ It has been fixed by #25758 and will be available to use when Rails 5.">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Harvest">
-    <meta property="og:url" content="/">
+    <meta property="og:title" content="Ruby on Rails チュートリアルをやってみている2">
+    <meta property="og:url" content="/2017/01/rails-trial2/">
     <meta property="og:site_name" content="Harvest">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Harvest">
-    <meta name="twitter:description" content="Hugo tranquilpeak theme demo">
+    <meta name="twitter:description" content="第2章 Toyアプリケーション 2.1 アプリケーションの計画 どうせなので、Herokuデプロイ前にrails serverしてみようと思ったが、 http://localhost:3000 につながらない。
+http://0.0.0.0:3000/ だと繋がった。。。
+Macでlocalhostが何か違う？？　$ git commit -am &quot;Add hello&quot; $ heroku create $ git push heroku master  これ、今回はサクッといった。
+herokuすごい！
+からの
+$ heroku open  $ rails generate scaffold User name:string email:string
+すごい！けど、謎が深まるばかり。。
+2.2.1 ユーザーページを探検する 探検できなかった。
+http://0.0.0.0:3000/users
+ArgumentError in UsersController#index key must be 32 bytes  ここによると
+ It has been fixed by #25758 and will be available to use when Rails 5.">
     
       <meta name="twitter:creator" content="@tofuaaa">
     
@@ -77,7 +109,7 @@ ga('send', 'pageview');
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="1">
+      <header id="header" data-behavior="4">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
     <a class="header-title-link" href="https://tofu2323.github.io/blog/">Harvest</a>
@@ -97,7 +129,7 @@ ga('send', 'pageview');
   
 </header>
 
-      <nav id="sidebar" data-behavior="1">
+      <nav id="sidebar" data-behavior="4">
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
@@ -184,35 +216,20 @@ ga('send', 'pageview');
 
       
 
-      <div id="main" data-behavior="1"
+      <div id="main" data-behavior="4"
         class="
                hasCoverMetaIn
                ">
-        <section class="postShorten-group main-content-wrap">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
           
           
-            
+            <div class="post-header main-content-wrap text-left">
   
-    
-      
-        
-      
-    
+    <h1 class="post-title" itemprop="headline">
+      Ruby on Rails チュートリアルをやってみている2
+    </h1>
   
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://tofu2323.github.io/blog/2017/01/rails-trial2/">
-          Ruby on Rails チュートリアルをやってみている2
-        </a>
-      </h1>
-      <div class="postShorten-meta post-meta">
+  <div class="postShorten-meta post-meta">
   <time itemprop="datePublished" datetime="2017-01-11T23:24:22&#43;09:00">
     
    11, 2017
@@ -230,240 +247,156 @@ ga('send', 'pageview');
 
 </div>
 
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>
-        第2章 Toyアプリケーション 2.1 アプリケーションの計画 どうせなので、Herokuデプロイ前にrails serverしてみようと思ったが、 <a href="http://localhost:3000">http://localhost:3000</a> につながらない。
-<a href="http://0.0.0.0:3000/">http://0.0.0.0:3000/</a> だと繋がった。。。
-Macでlocalhostが何か違う？？　$ git commit -am &quot;Add hello&quot; $ heroku create $ git push heroku master  これ、今回はサクッといった。
-herokuすごい！
-からの
-$ heroku open  $ rails generate scaffold User name:string email:string
-すごい！けど、謎が深まるばかり。。
-2.2.1 ユーザーページを探検する 探検できなかった。
-<a href="http://0.0.0.0:3000/users">http://0.0.0.0:3000/users</a>
-ArgumentError in UsersController#index key must be 32 bytes  ここによると
- It has been fixed by #25758 and will be available to use when Rails 5.
-        <br>
-        <a href="https://tofu2323.github.io/blog/2017/01/rails-trial2/" class="postShorten-excerpt_link link"></a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
+</div>
           
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              
+
+<h3 id="第2章-toyアプリケーション">第2章 Toyアプリケーション</h3>
+
+<h4 id="2-1-アプリケーションの計画">2.1 アプリケーションの計画</h4>
+
+<p>どうせなので、Herokuデプロイ前に<code>rails server</code>してみようと思ったが、
+<a href="http://localhost:3000">http://localhost:3000</a> につながらない。<br />
+<a href="http://0.0.0.0:3000/">http://0.0.0.0:3000/</a> だと繋がった。。。<br />
+Macでlocalhostが何か違う？？　　</p>
+
+<pre><code>$ git commit -am &quot;Add hello&quot;
+$ heroku create
+$ git push heroku master
+</code></pre>
+
+<p>これ、今回はサクッといった。<br />
+herokuすごい！</p>
+
+<p>からの</p>
+
+<pre><code>$ heroku open
+</code></pre>
+
+<p><code>$ rails generate scaffold User name:string email:string</code><br />
+すごい！けど、謎が深まるばかり。。</p>
+
+<h5 id="2-2-1-ユーザーページを探検する">2.2.1 ユーザーページを探検する</h5>
+
+<p>探検できなかった。<br />
+<a href="http://0.0.0.0:3000/users">http://0.0.0.0:3000/users</a></p>
+
+<pre><code>ArgumentError in UsersController#index
+key must be 32 bytes
+</code></pre>
+
+<p><a href="https://github.com/rails/rails/issues/26694">ここ</a>によると</p>
+
+<blockquote>
+<p>It has been fixed by #25758 and will be available to use when Rails 5.0.1 is released, thanks for the report!</p>
+</blockquote>
+
+<p>とのこと。。</p>
+
+<p>ということで、</p>
+
+<pre><code class="language-rb">gem 'rails',        '5.0.1'
+</code></pre>
+
+<p>にして、<code>$ bundle update</code>したらいけた。
+けど、チュートリアルどうなのこれ？</p>
+
+<p><code>heroku logs --tail</code></p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
             
-  
-    
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small"></span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://tofu2323.github.io/blog//tags/ruby-on-rails/">Ruby on Rails</a>
+
+  <a class="tag tag--primary tag--small" href="https://tofu2323.github.io/blog//tags/learning/">learning</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
       
-        
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+            <i class="fa fa-angle-left"></i>
+            <span class="hide-xs hide-sm text-small icon-ml"></span>
+          </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://tofu2323.github.io/blog/2017/01/rails-trial1/" data-tooltip="Ruby on Rails チュートリアルをやってみている">
+          
+            <span class="hide-xs hide-sm text-small icon-mr"></span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </li>
       
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
     
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://tofu2323.github.io/blog/2017/01/rails-trial1/">
-          Ruby on Rails チュートリアルをやってみている
+      <li class="post-action hide-lg hide-md hide-sm">
+        <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+          <i class="fa fa-share-alt"></i>
         </a>
-      </h1>
-      <div class="postShorten-meta post-meta">
-  <time itemprop="datePublished" datetime="2017-01-11T22:40:04&#43;09:00">
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2ftofu2323.github.io%2fblog%2f2017%2f01%2frails-trial2%2f">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftofu2323.github.io%2fblog%2f2017%2f01%2frails-trial2%2f">
+          <i class="fa fa-facebook-official"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2ftofu2323.github.io%2fblog%2f2017%2f01%2frails-trial2%2f">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
     
-   11, 2017
-
-  </time>
-  
-  
-  
-    <span></span>
     
-      <a class="category-link" href="https://tofu2323.github.io/blog/categories/web">Web</a>
+      <li class="post-action">
+        <a class="post-action-btn btn btn--default" href="#disqus_thread">
+          <i class="fa fa-comment-o"></i>
+        </a>
+      </li>
     
-  
-
-
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
 </div>
 
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>
-        Ruby on Rails チュートリアル アプリ開発にRailsを使ってみようということでRuby on Rails チュートリアルを一通りやってみる。
-Rubyに触ったことはない。
-RailsがなんかWebアプリ開発によく使われているという程度の知識。
-プログラミング歴2年。Javaから入って今一番触っている言語はTypeScriptという私です。
-Macを使っている。
-感想・ハマったことなどメモ。
-第1章 1.2.1 開発環境 Cloud9 を推奨されているけどMacにすでに入っているIntelliJ IDEAを使用。。。
-あとでherokuにpushするときに若干ハマる。
-IDEAのプロジェクトのファイル構成がよくわかっていない。
-1.3 最初のアプリケーション 構成とかアーキはRailsで標準的なものがある感じ？？
-どういう風にrailsに乗って行くべきか。。
-会社の開発（Spring Boot + Vue.js)ではroutingもクライアントでやっていてそれが普通だと思っていたけど そもそもサーバーでやるのが一般的なの？？
-.GemFileというもの
-source &lsquo;<a href="https://rubygems.org'">https://rubygems.org'</a> gem &lsquo;rails&rsquo;, &lsquo;5.0.0.1&rsquo; gem &lsquo;puma&rsquo;, &lsquo;3.4.0&rsquo; gem &lsquo;sass-rails&rsquo;, &lsquo;5.0.6&rsquo; gem &lsquo;uglifier&rsquo;, &lsquo;3.0.0&rsquo; gem &lsquo;coffee-rails&rsquo;, &lsquo;4.2.1&rsquo; gem &lsquo;jquery-rails&rsquo;, &lsquo;4.1.1&rsquo; gem &lsquo;turbolinks&rsquo;, &lsquo;5.0.1&rsquo; gem &lsquo;jbuilder&rsquo;, &lsquo;2.4.1&rsquo; group :development, :test do gem &lsquo;sqlite3&rsquo;, &lsquo;1.3.11&rsquo; gem &lsquo;byebug&rsquo;, &lsquo;9.0.0&rsquo;, platform: :mri end group :development do gem &lsquo;web-console&rsquo;, &lsquo;3.
-        <br>
-        <a href="https://tofu2323.github.io/blog/2017/01/rails-trial1/" class="postShorten-excerpt_link link"></a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
 
-          
             
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://tofu2323.github.io/blog/2017/01/start-frontend/">
-          フロントエンド検討メモ
-        </a>
-      </h1>
-      <div class="postShorten-meta post-meta">
-  <time itemprop="datePublished" datetime="2017-01-09T13:45:38&#43;09:00">
-    
-   9, 2017
-
-  </time>
-  
-  
-  
-    <span></span>
-    
-      <a class="category-link" href="https://tofu2323.github.io/blog/categories/web">Web</a>
-    
-  
-
-
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>
-        <h2 id="vue-js">vue.js</h2>
-
-<p>使い慣れているのは1.x系だけど確実に2.x系を使うべき。<br />
-1.x系はなかったことにされている雰囲気。</p>
-
-<p>2.x系少しキャッチアップにコストがかかる。<br />
-どうせなら合わせて色々使ってみる？</p>
-
-<h3 id="検討事項">検討事項</h3>
-
-<h4 id="vue-cli">vue-cli</h4>
-
-<p>これを使えばwebpackやgruntがいらない？？</p>
-
-<h3 id="vuex">vuex</h3>
-
-<p>使うのが普通？<br />
-Fluxというもの<br />
-<a href="https://medium.com/@sotayamashita/%E6%BC%AB%E7%94%BB%E3%81%A7%E8%AA%AC%E6%98%8E%E3%81%99%E3%82%8B-flux-1a219e50232b#.7ofaks2rk">参考</a></p>
-
-<ul>
-<li>データフローが一方向なのがすごいらしい<br />
-ACTION -&gt; DISPATHCER -&gt; STORE -&gt; VIEW -&gt; ACTION<br />
-Vuexは以下？<br />
-Action -&gt; Mutations -&gt; State -&gt; Vue Component -&gt; Action</li>
-</ul>
-
-<h2 id="よく見かけるもの">よく見かけるもの</h2>
-
-<h3 id="nginx">Nginx</h3>
-
-<p>
-        <br>
-        <a href="https://tofu2323.github.io/blog/2017/01/start-frontend/" class="postShorten-excerpt_link link"></a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
+              
             
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://tofu2323.github.io/blog/2017/01/start/">
-          スタートメモ
-        </a>
-      </h1>
-      <div class="postShorten-meta post-meta">
-  <time itemprop="datePublished" datetime="2017-01-09T12:22:58&#43;09:00">
-    
-   9, 2017
-
-  </time>
-  
-  
-  
-    <span></span>
-    
-      <a class="category-link" href="https://tofu2323.github.io/blog/categories/web">Web</a>
-    
-  
-
-
-</div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>
-        Hugo <a href="https://staticsitegenerators.net/">https://staticsitegenerators.net/</a>
-$ brew install hugo
-==&gt; Downloading <a href="https://homebrew.bintray.com/bottles/hugo-0.18.1.sierra.bottle.t">https://homebrew.bintray.com/bottles/hugo-0.18.1.sierra.bottle.t</a> ######################################################################## 100.0% ==&gt; Pouring hugo-0.18.1.sierra.bottle.tar.gz ==&gt; Caveats Bash completion has been installed to: /usr/local/etc/bash_completion.d ==&gt; Summary 🍺 /usr/local/Cellar/hugo/0.18.1: 32 files, 16.3M  $ hugo version
-Hugo Static Site Generator v0.18.1 BuildDate: 2016-12-30T02:12:41+09:00  $ hugo new site blig
-Congratulations! Your new Hugo site is created in /Users/fumiya/Dev/hugo/blog. Just a few more steps and you&rsquo;re ready to go: 1. Download a theme into the same-named folder.
-        <br>
-        <a href="https://tofu2323.github.io/blog/2017/01/start/" class="postShorten-excerpt_link link"></a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-          
-
-        </section>
+          </div>
+        </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
     &copy; 2017 Fumiya Goto. 
@@ -471,6 +404,92 @@ Congratulations! Your new Hugo site is created in /Users/fumiya/Dev/hugo/blog. J
 </footer>
 
       </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+            <i class="fa fa-angle-left"></i>
+            <span class="hide-xs hide-sm text-small icon-ml"></span>
+          </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://tofu2323.github.io/blog/2017/01/rails-trial1/" data-tooltip="Ruby on Rails チュートリアルをやってみている">
+          
+            <span class="hide-xs hide-sm text-small icon-mr"></span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
+    
+      <li class="post-action hide-lg hide-md hide-sm">
+        <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+          <i class="fa fa-share-alt"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2ftofu2323.github.io%2fblog%2f2017%2f01%2frails-trial2%2f">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftofu2323.github.io%2fblog%2f2017%2f01%2frails-trial2%2f">
+          <i class="fa fa-facebook-official"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2ftofu2323.github.io%2fblog%2f2017%2f01%2frails-trial2%2f">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+    
+    
+      <li class="post-action">
+        <a class="post-action-btn btn btn--default" href="#disqus_thread">
+          <i class="fa fa-comment-o"></i>
+        </a>
+      </li>
+    
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <ul class="share-options">
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3a%2f%2ftofu2323.github.io%2fblog%2f2017%2f01%2frails-trial2%2f">
+        <i class="fa fa-google-plus"></i><span></span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftofu2323.github.io%2fblog%2f2017%2f01%2frails-trial2%2f">
+        <i class="fa fa-facebook-official"></i><span></span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2ftofu2323.github.io%2fblog%2f2017%2f01%2frails-trial2%2f">
+        <i class="fa fa-twitter"></i><span></span>
+      </a>
+    </li>
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
     </div>
     
     <div id="about">
@@ -694,7 +713,34 @@ $(document).ready(function() {
 });
 </script>
 
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/tofu2323.github.io\/blog\/2017\/01\/rails-trial2\/';
+          
+            this.page.identifier = '\/2017\/01\/rails-trial2\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'hugo-tranquilpeak-theme';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
 
     
   </body>
 </html>
+

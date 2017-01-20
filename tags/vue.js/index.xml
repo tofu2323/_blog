@@ -2,19 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vue.Js on Harvest</title>
-    <link>https://tofu2323.github.io/tofu/tags/vue.js/index.xml</link>
+    <link>https://tofu2323.github.io/blog/tags/vue.js/index.xml</link>
     <description>Recent content in Vue.Js on Harvest</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <atom:link href="https://tofu2323.github.io/tofu/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tofu2323.github.io/blog/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>フロントエンド検討メモ</title>
-      <link>https://tofu2323.github.io/tofu/2017/01/start-frontend/</link>
+      <link>https://tofu2323.github.io/blog/2017/01/start-frontend/</link>
       <pubDate>Mon, 09 Jan 2017 13:45:38 +0900</pubDate>
       
-      <guid>https://tofu2323.github.io/tofu/2017/01/start-frontend/</guid>
+      <guid>https://tofu2323.github.io/blog/2017/01/start-frontend/</guid>
       <description>&lt;h2 id=&#34;vue-js&#34;&gt;vue.js&lt;/h2&gt;
+
+&lt;p&gt;使い慣れているのは1.x系だけど確実に2.x系を使うべき。&lt;br /&gt;
+1.x系はなかったことにされている雰囲気。&lt;/p&gt;
+
+&lt;p&gt;2.x系少しキャッチアップにコストがかかる。&lt;br /&gt;
+どうせなら合わせて色々使ってみる？&lt;/p&gt;
 
 &lt;h3 id=&#34;検討事項&#34;&gt;検討事項&lt;/h3&gt;
 
